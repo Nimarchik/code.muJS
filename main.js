@@ -58,7 +58,7 @@ console.log(arr.lenght); */
 
 // function per() {
 //     for (day in obj) {
-//        console.log(obj[day]); 
+//        console.log(obj[day]);
 //     }
 // }
 // per()
@@ -85,7 +85,7 @@ console.log(arr.lenght); */
 /* Создайте объект user с ключами 'name', 'surname', 'patronymic' и какими-то произвольными значениями. Выведите на экран фамилию, имя и отчество через пробел. */
 
 // let user = {
-//     name: "lesha", 
+//     name: "lesha",
 //     surname: "Ivanov",
 //     patronymic: "Oleksiiovich"
 // }
@@ -251,7 +251,7 @@ let obj = {
 // 	[key]: 1,
 // 	y: 2,
 // 	z: 3
-// }; 
+// };
 
 // console.log(obj);
 
@@ -279,7 +279,6 @@ let key3 = 'z';
 // 	[key3]: 3
 // };
 
-
 // console.log(obj);
 
 // let obj = {x: 1, y: 2, z: 3};
@@ -287,3 +286,159 @@ let key3 = 'z';
 
 // console.log('x' in obj);
 
+/* Перепишите следующий код через описанный подход:
+
+let arr = [1, 2, 3, 4, 5];
+let res = arr[1] + arr[2];
+
+console.log(res); */
+
+// const arr = [1, 2, 3, 4, 5]
+// const res = arr[1] + arr[2]
+
+// console.log(res)
+
+/* Код должен вывести элемент объекта:
+
+let obj = {x: 1, y: 2, z: 3};
+console.log(obj[x]); */
+
+// let obj = { x: 1, y: 2, z: 3 }
+// console.log(obj['x'])
+
+/* Код должен вывести элемент объекта по ключу из переменной:
+
+let obj = {x: 1, y: 2, z: 3};
+let key = 'x';
+
+console.log(obj.key); */
+
+// let obj = { x: 1, y: 2, z: 3 }
+// let key = 'x'
+
+// console.log(obj[key])
+
+/* Код должен вывести сумму элементов объекта:
+
+let obj = {x: 1, y: 2, z: 3};
+let sum = obj[x] + obj[y] + obj[x];
+
+console.log(obj); */
+
+// let obj = { x: 1, y: 2, z: 3 }
+// let sum = obj['x'] + obj['y'] + obj['x']
+
+// console.log(sum)
+
+/* Код должен вывести количество элементов объекта:
+
+let obj = {x: 1, y: 2, z: 3};
+console.log(obj.length); */
+
+// let obj = { x: 1, y: 2, z: 3 }
+// console.log(Object.keys(obj).length)
+
+/* Проверьте, что переменная test больше 10. */
+
+// let test = 11
+
+// if (test > 10) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Проверьте, что переменная test меньше 10. */
+
+// let test = 1
+
+// if (test < 10) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Проверьте, что переменная test больше или равна 10. */
+
+// let test = 10
+
+// if (test >= 10) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Проверьте, что переменная test меньше или равна 10. */
+
+// let test = 9
+
+// if (test <= 10) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Проверьте, что переменная test равна 10. */
+
+// let test = 10
+
+// if (test == 10) {
+// 	console.log('=')
+// } else {
+// 	console.log('!=')
+// }
+
+/* Проверьте, что переменная test не равна 10. */
+
+// let test = 10
+
+// if (test != 10) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Даны переменные test1 и test2. Проверьте, что значение какой из этих переменных больше и выведите соответствующее сообщение. */
+
+// let test1 = 10, test2 = 24
+// if(test1 > test2) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+/* Даны переменные test1 и test2. Проверьте, равны ли их значения и выведите соответствующее сообщение. */
+
+// let test1 = 10,
+// 	test2 = 10
+// if (test1 == test2) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Даны переменные test1 и test2, содержащие строки. Проверьте, равны ли их значения и выведите соответствующее сообщение. */
+
+// let test1 = 'abbc',
+// 	test2 = 'abc'
+
+// if (test1 == test2) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Даны переменные:
+
+let test1 = '123';
+let test2 = 123;
+Проверьте, равны ли значения переменных и выведите соответствующее сообщение */
+
+// let test1 = '123'
+// let test2 = 123
+
+// if (test1 == test2) {
+// 	console.log('Yes')
+// } else {
+// 	console.log('No')
+// }
