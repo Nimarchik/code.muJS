@@ -412,7 +412,7 @@ console.log(obj.length); */
 // let test1 = 10,
 // 	test2 = 10
 // if (test1 == test2) {
-// 	console.log('+++')
+	// console.log('+++')
 // } else {
 // 	console.log('---')
 // }
@@ -434,11 +434,15 @@ let test1 = '123';
 let test2 = 123;
 Проверьте, равны ли значения переменных и выведите соответствующее сообщение */
 
-// let test1 = '123'
-// let test2 = 123
+let test1 = '123'
+let test2 = 123
 
-// if (test1 == test2) {
-// 	console.log('Yes')
-// } else {
-// 	console.log('No')
-// }
+if (test1 == test2) {
+	console.log('Yes')
+} else {
+	console.log('No')
+}
+
+/*  */
+
+/* */
