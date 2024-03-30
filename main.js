@@ -412,7 +412,7 @@ console.log(obj.length); */
 // let test1 = 10,
 // 	test2 = 10
 // if (test1 == test2) {
-	// console.log('+++')
+// 	console.log('+++')
 // } else {
 // 	console.log('---')
 // }
@@ -434,15 +434,92 @@ let test1 = '123';
 let test2 = 123;
 Проверьте, равны ли значения переменных и выведите соответствующее сообщение */
 
-let test1 = '123'
-let test2 = 123
+// let test1 = '123'
+// let test2 = 123
 
-if (test1 == test2) {
-	console.log('Yes')
+// if (test1 == test2) {
+// 	console.log('Yes')
+// } else {
+// 	console.log('No')
+// }
+
+/* Проверьте, что переменная num больше нуля и меньше 5. */
+
+// let num = 6
+
+// if (num > 0 && num < 5) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Проверьте, что переменная num больше или равна 10 и меньше или равна 20. */
+
+// let num = 11
+
+// if (num >= 10 && num <= 20) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Проверьте, что переменная num1 равна или меньше 1, а переменная num2 больше или равна 3. */
+
+// let num1 = 1
+// let num2 = 5
+
+// if (num1 <= 1 && num2 >= 3) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Дан следующий код:
+
+if (num1 >= 0 || num2 <= 10) {
+	console.log('+++');
 } else {
-	console.log('No')
+	console.log('---');
 }
+Используя оператор ! инвертируйте приведенное условие. */
+
+// let num1 = -1
+// let num2 = 11
+
+// if (!(num1 >= 0 || num2 <= 10)) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Проверьте, что переменная test равна true. */
+
+// let test = true
+
+// if(test === true){
+// 	console.log("+++");
+// } else{
+// 	console.log('-')
+// }
+
+/* Проверьте, что переменная test равна false. */
+
+// let test = true
+
+// if (test === false) {
+// 	console.log('+++')
+// } else {
+// 	console.log('-')
+// }
+
+/* Вспомните и напишите, какие значения при приведении к логическому типу дают false. */
+
+// let test = undefined
+
+// if (Boolean(test) == false) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
 
 /*  */
-
-/* */
