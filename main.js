@@ -522,4 +522,314 @@ if (num1 >= 0 || num2 <= 10) {
 // 	console.log('---')
 // }
 
+/* Перепишите следующий код с использованием сокращенной формы:
+
+let test = true;
+
+if (test === true) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+
+// let test = true
+
+// if (test) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Перепишите следующий код с использованием сокращенной формы:
+
+let test = true;
+
+if (test == false) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+
+// let test = true
+
+// if (!test) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Перепишите следующий код с использованием сокращенной формы:
+
+let test = true;
+
+if (test != true) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+
+// let test = true
+
+// if (!test) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Перепишите следующий код с использованием сокращенной формы:
+
+let test = true;
+
+if (test != false) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+
+// let test = true
+
+// if (test) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Перепишите следующий код в сокращенной форме:
+
+let test1 = true;
+let test2 = true;
+
+if (test1 === true && test2 === true) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+
+// let test1 = true
+// let test2 = true
+
+// if (test1 && test2) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Перепишите следующий код в сокращенной форме:
+
+let test1 = true;
+let test2 = true;
+
+if (test1 === true && test2 !== true) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+
+// let test1 = true
+// let test2 = true
+
+// if (test1 && !test2) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Перепишите следующий код в сокращенной форме:
+
+let test1 = true;
+let test2 = true;
+
+if (test1 !== true && test2 !== true) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+
+// let test1 = true
+// let test2 = true
+
+// if (!test1 && !test2) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Перепишите следующий код в сокращенной форме:
+
+let test1 = true;
+let test2 = true;
+
+if (test1 !== false && test2 === true) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+
+// let test1 = true
+// let test2 = true
+
+// if (test1 && test2) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Перепишите следующий код в сокращенной форме:
+
+let test1 = true;
+let test2 = true;
+let test3 = true;
+
+if (test1 === true && test2 === true && test3 === true) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+
+// let test1 = true
+// let test2 = true
+// let test3 = true
+
+// if (test1 && test2  && test3) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Перепишите следующий код в сокращенной форме:
+
+let test1 = true;
+let test2 = true;
+let test3 = true;
+
+if (test1 === true || test2 === true && test3 === true) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+
+// let test1 = true
+// let test2 = true
+// let test3 = true
+
+// if (test1 || (test2 && test3)) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Перепишите следующий код в сокращенной форме:
+
+let test1 = true;
+let test2 = true;
+let test3 = true;
+
+if (test1 === true || test2 === false && test3 === false) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+
+// let test1 = true
+// let test2 = true
+// let test3 = true
+
+// if (test1 || (!test2 && !test3)) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Проверьте, что переменная test равна 10, то пусть на экран выведется 'yes'. В противном случае пусть ничего не произойдет. */
+
+// let test = 11
+// if(test == 10){
+// 	console.log('yes');
+// }
+
+/* Перепишите следующий код в сокращенной форме:
+
+if (test > 0) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+// let test = 10
+
+// if (test > 0) console.log('+++')
+// else console.log('---')
+
+/* Перепишите следующий код в сокращенной форме:
+
+if (test > 0) {
+	console.log('+++');
+} */
+
+// let test= 10
+// if(test > 0 ) console.log('+++');
+
+/* В переменной day лежит какое-то число из интервала от 1 до 31. Определите в какую декаду месяца попадает это число (в первую, вторую или третью). */
+
+// let day = 25
+
+// if (day < 20) {
+// 	console.log('decada 1')
+// } else if (day < 30) {
+// 	console.log('decada 2')
+// } else if (day < 40) {
+// 	console.log('decada 3')
+// } else {
+// 	console.log('не правильное число')
+// }
+
+/* Пусть в переменной num хранится число. Если это число попадает в диапазон от 10 до 99, то найдите сумму цифр этого числа. Если полученная сумма меньше или равна 9, то выведите сообщение о том, что сумма цифр однозначна, в противном случае выведите сообщение о том, что сумма цифр двухзначна. */
+
+// let num = 54
+
+// if (num < 10 || num > 99) {
+// 	console.log('сума чисел меньше 10 или больше 99')
+// } else {
+// 	let num2 = num % 10
+// 	let num1 = (num - num2) / 10
+// 	let sum = num1 + num2
+// 	// console.log(sum)
+
+// 	if (sum < 10) {
+// 		console.log('сумма однозначная')
+// 	} else {
+// 		console.log('сумма двухзначная')
+// 	}
+// }
+
+/* Перепишите следующий код через switch-case:
+
+let lang = 'ru';
+
+if (lang == 'ru') {
+	console.log('рус');
+} else if (lang == 'en') {
+	console.log('анг');
+} else if (lang == 'de') {
+	console.log('нем');
+} else {
+	console.log('язык не поддерживается');
+} */
+
+// let lang = 'de'
+
+// switch (lang) {
+// 	case 'ru':
+// 		console.log('rus')
+// 		break
+// 	case 'en':
+// 		console.log('ang')
+// 		break
+// 	case 'de':
+// 		console.log('nem')
+// 		break
+// 	default:
+// 		console.log('dont')
+// 		break
+// }
+
 /*  */
