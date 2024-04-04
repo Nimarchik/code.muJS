@@ -1130,4 +1130,312 @@ console.log(res); */
 // 	console.log('no ' + res)
 // }
 
+/* Код должен проверить сумму чисел:
+
+let num1 = 1;
+let num2 = 2;
+
+if (num1 + num2 === 3) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+
+// let num1 = 1
+// let num2 = 2
+
+// if (num1 + num2 === 3) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Код должен проверить сумму чисел:
+
+let num1 = '1';
+let num2 = '2';
+
+if (num1 + num2 === 3) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+
+// let num1 = 1
+// let num2 = 2
+
+// if (num1 + num2 === 3) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Код должен проверить сумму чисел:
+
+let num1 = '1';
+let num2 = '2';
+
+if (Number(num1 + num2) === 3) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+
+// let num1 = 1
+// let num2 = 2
+
+// if (num1 + num2 === 3) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Код должен проверить первую цифру числа:
+
+let num = 123;
+
+if (num[0] === 1) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+
+// let num = 123
+// let str = String(num)
+
+// if (str[0] == 1) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Код должен проверить первую цифру числа:
+
+let num = 123;
+
+if (String(num[0]) === 1) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+
+// let num = 123
+
+// if (String(num)[0] == 1) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Код должен проверить первую цифру числа:
+
+let num = 123;
+
+if (String(num)[0] === 1) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+
+// let num = 123
+
+// if (String(num)[0] === '1') {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Код должен проверить первую цифру числа:
+
+let num = 123;
+let first = String(num)[0];
+
+if (first === 1) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+
+// let num = 123
+// let first = String(num)[0]
+
+// if (first == 1) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Код должен проверить, что в числе ровно две цифры:
+
+let num = 12;
+
+if (num.length === 2) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+
+// let num = 12
+
+// if (String(num).length === 2) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Код должен проверить, что в числе ровно две цифры:
+
+let num = 12;
+let str = Number(str);
+
+if (str.length === 2) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+
+// let num = 12
+// let str = String(num)
+
+// if (str.length == 2) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Код должен проверить, что в числе ровно две цифры:
+
+let num = 12;
+
+if (String(num.length) === 2) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+
+// let num = 12
+
+// if (String(num).length == 2) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Код должен проверить, что в числе ровно две цифры:
+
+let num = 12;
+
+if (String(num).length === String(2)) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+
+// let num = 12
+
+// if (String(num).length === 2) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Код должен проверить, что в числе ровно две цифры:
+
+let num = 12;
+
+if (String(num).lenght === 2) {
+	console.log('+++');
+} else {
+	console.log('---');
+} */
+
+// let num = 12
+
+// if (String(num).length === 2) {
+// 	console.log('+++')
+// } else {
+// 	console.log('---')
+// }
+
+/* Код должен проверить равна ли сумма первых трех цифр числа сумме вторых трех чисел:
+
+let num = '123033'; // берем в кавычки, чтобы обращаться к цифрам
+
+let sum1 = num[0] + num[1] + num[2];
+let sum2 = num[3] + num[4] + num[5];
+
+if (sum1 == sum2) {
+	console.log('суммы равны');
+} else {
+	console.log('суммы не равны');
+} */
+
+// let num = [1, 2, 3, 0, 3, 3] // берем в кавычки, чтобы обращаться к цифрам
+
+// let sum1 = num[0] + num[1] + num[2]
+// let sum2 = num[3] + num[4] + num[5]
+
+// if (sum1 == sum2) {
+// 	console.log('суммы равны')
+// } else {
+// 	console.log('суммы не равны')
+// 	console.log(sum2, sum1);
+// }
+
+/* В переменной month лежит какое-то число из интервала от 1 до 12. Определите в какую пору года попадает этот месяц (зима, лето, весна, осень). */
+
+// let month = 5
+
+// if (month <= 2 || month == 12) {
+// 	console.log('Зима')
+// } else if (month >= 3 && month <= 5) {
+// 	console.log('Весна')
+// } else if (month >= 6 && month <= 8) {
+// 	console.log('Лето')
+// } else if (month >= 9 && month <= 11) {
+// 	console.log('Осень')
+// } else {
+// 	console.log('Месяцов всего 12')
+// }
+
+/* Дана строка, состоящая из символов, например, 'abcde'. Проверьте, что первым символом этой строки является буква 'a'. Если это так - выведите 'да', в противном случае выведите 'нет'. */
+
+// let str = 'abcde'
+
+// if (str[0] == 'a') {
+// 	console.log('da')
+// } else {
+// 	console.log('no')
+// }
+
+/* Дано число, например, 12345. Проверьте, что первым символом этого числа является цифра 1, 2 или 3. Если это так - выведите 'да', в противном случае выведите 'нет'. */
+
+// let num = 12345
+
+// if (String(num)[0] <= 3) {
+// 	console.log('da')
+// } else {
+// 	console.log('no')
+// }
+
+/* Дано трехзначное число. Найдите сумму цифр этого числа. */
+
+// let num = 345
+// let str = String(num)
+// let sum = Number(str[0]) + Number(str[1]) + Number(str[2])
+// console.log(sum);
+
+/* Дано число из 6-ти цифр. Проверьте, что сумма первых трех цифр равняется сумме вторых трех цифр. Если это так - выведите 'да', в противном случае выведите 'нет'. */
+
+// let num = 123123
+// let str = String(num)
+// let sum1 = str[0] + str[1] + str[2]
+// let sum2 = str[3] + str[4] + str[5]
+// if (sum1 == sum2) {
+// 	console.log('ye')
+// 	console.log(sum1, sum2)
+// } else {
+// 	console.log('no')
+// }
+
 /*  */
