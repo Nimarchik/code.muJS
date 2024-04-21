@@ -6138,17 +6138,4 @@ let result = filter([1, 2, 3, 4, 5], function(elem) {
 // func()
 // func()
 
-function func() {
-	let num = 0;
-	
-	return function() {
-		console.log(num);
-		num++;
-	};
-}
-
-let test = func;
-
-test()();
-test()();
-test()();
+/* 262 */
