@@ -6063,7 +6063,7 @@ let result = filter([1, 2, 3, 4, 5], function(elem) {
 // 			res.push(elem);
 // 		}
 // 	}
-	
+
 // 	return res;
 // }
 
@@ -6072,7 +6072,6 @@ let result = filter([1, 2, 3, 4, 5], function(elem) {
 // console.log(result);
 
 /* Самостоятельно, не подсматривая в мой код, реализуйте счетчик вызова функции, работающий на замыканиях. */
-
 
 // function test(){
 // 	let num = 1
@@ -6139,3 +6138,31 @@ let result = filter([1, 2, 3, 4, 5], function(elem) {
 // func()
 
 /* 262 */
+
+/* Дана следующая функция с коллбэком:
+
+let result = filter([1, 2, 3, 4, 5], function(elem) {
+	if (elem > 0) {
+		return true;
+	} else {
+		return false;
+	}
+});
+Упростите коллбэк через стрелочную функцию. */
+
+// function filter(arr, callback) {
+// 	let res = []
+
+// 	for (let elem of arr) {
+// 		if (callback(elem)) {
+// 			res.push(elem)
+// 		}
+// 	}
+
+// 	return res
+// }
+
+// let result = filter([1, 2, 3, 4, 5], elem => (elem > 0 ? true : false))
+// console.log(result)
+
+/*  */
