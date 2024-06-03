@@ -4435,12 +4435,11 @@ let affairs = {
 	'2019-12-30': ['data31', 'data32', 'data33'],
 } */
 /* Добавьте еще одно дело в дату '2019-12-29' */
-let affairs = {
-	'2019-12-28': ['data11', 'data12', 'data13'],
-	'2019-12-29': ['data21', 'data22', 'data23'],
-	'2019-12-30': ['data31', 'data32', 'data33'],
-}
-
+// let affairs = {
+// 	'2019-12-28': ['data11', 'data12', 'data13'],
+// 	'2019-12-29': ['data21', 'data22', 'data23'],
+// 	'2019-12-30': ['data31', 'data32', 'data33'],
+// }(
 // affairs['2019-12-29'].push('data24')
 
 // console.log(affairs)
@@ -6165,4 +6164,249 @@ let result = filter([1, 2, 3, 4, 5], function(elem) {
 // let result = filter([1, 2, 3, 4, 5], elem => (elem > 0 ? true : false))
 // console.log(result)
 
-/*  */
+/* Самостоятельно, не подсматривая в мой код, реализуйте счетчик вызова функции, работающий на замыканиях.  */
+
+// function test() {
+// 	let num = 1
+
+// 	return function(){
+// 		console.log(num);
+// 		num++
+// 	}
+// }
+
+// let result = test()
+// result()
+// result()
+// let result2 = test()
+// result2()
+// result2()
+
+/* Пусть функция в замыкании хранит число 10. Сделайте так, чтобы каждый вызов функции уменьшал это число на 1 и выводил в консоль уменьшенное число. */
+
+// function func() {
+// 	let num = 10
+// 	return function () {
+// 		console.log(num)
+// 		num--
+// 	}
+// }
+
+// let res = func()
+// res()
+// res()
+// res()
+// res()
+// res()
+
+/* Модифицируйте предыдущую задачу так, чтобы отсчет доходил до 0, а затем каждый последующий вызов функции выводил в консоль сообщение о том, что отсчет окончен. */
+
+// function func() {
+// 	let num = 0
+// 	return function () {
+// 		for (let i = 10; i >= num; i--) {
+// 			console.log(i)
+// 			if (i == 0) {
+// 				num = 'end'
+// 				console.log(num)
+// 			}
+// 		}
+// 	}
+// }
+
+// let res = func()
+// res()
+// res()
+// res()
+
+/* Допишите следующий код так, чтобы его запуск алертом выводил '!':
+
+(function() {
+	// какой-то код
+})()()(); */
+
+// (function() {
+// 	return function(){
+// 		return function(){
+// 			console.log('!');
+// 		};
+// 	};
+// })()()()
+
+/* Допишите следующий код так, чтобы его запуск выводил сумму переданных параметрами чисел:
+
+(function() {
+	// какой-то код
+})(1)(2); */
+
+// (function(num1) {
+// 	return function(num2){
+// 		console.log(num1 + num2);
+// 	}
+// })(1)(2);
+
+/* Допишите следующий код так, чтобы его запуск выводил сумму переданных параметрами чисел:
+
+(function() {
+	// какой-то код
+})(1)(2)(3); */
+
+// (function (num1) {
+// 	return function (num2) {
+// 		return function (num3) {
+// 			console.log(num1 + num2 + num3);
+// 		}
+// 	}
+// })(1)(2)(3)
+
+/* Не подсматривая в мой код, самостоятельно реализуйте такой же счетчик. */
+
+// let func = (function () {
+// 	let num = 1
+
+// 	return function () {
+// 		console.log(num)
+// 		num++
+
+// 		if (num == 6) {
+// 			num = 1
+// 		}
+// 	}
+// })()
+
+// for (let i = 1; i <= 10; i++) {
+// 	func()
+// }
+
+/* Дан массив:
+
+let arr = [1, 2, 3, 4, 5];
+С помощью рекурсии выведите элементы этого массива в консоль. */
+
+// let arr = [1, 2, 3, 4, 5]
+
+// function printArr(arr, index) {
+// 	if (index < arr.length) {
+// 		console.log(arr[index])
+// 		printArr(arr, index + 1)
+// 	}
+// }
+// printArr(arr, 0)
+
+/* Дан массив:
+
+let arr = [1, 2, 3, 4, 5];
+С помощью рекурсии найдите сумму квадратов элементов этого массива. */
+
+// let arr = [1, 2, 3, 4, 5]
+
+// function sumArr(arr) {
+// 	let sum = arr.shift()**2
+
+// 	if (arr.length !== 0) {
+// 		sum += sumArr(arr)
+// 	}
+// 	return sum
+// }
+
+// console.log(sumArr(arr))
+
+/* Дан многомерный объект произвольного уровня вложенности, например, такой:
+
+{a: 1, b: {c: 2, d: 3, e: 4}, f: {g: 5, j: 6, k: {l: 7, m: {n: 8, o: 9}}}}
+С помощью рекурсии выведите все примитивные элементы этого объекта в консоль. */
+
+// function func(arr){
+// 	for(let elem in arr){
+// 		if(typeof elem == 'object'){
+// 			func(elem)
+// 		} else{
+// 			console.log(elem);
+// 		}
+// 	}
+// }
+
+// func(
+// 	{a: 1, b: {c: 2, d: 3, e: 4}, f: {g: 5, j: 6, k: {l: 7, m: {n: 8, o: 9}}}}
+// )
+
+/* Дан многомерный массив произвольного уровня вложенности, например, такой:
+
+[1, [2, 7, 8], [3, 4, [5, [6, 7]]]]
+Напишите код, который развернет наш многомерный массив в одномерный. Для приведенного выше массива это будет выглядеть вот так:
+
+[1, 2, 7, 8, 3, 4, 5, 6, 7] */
+
+// let arrays = []
+
+// function func(arr) {
+// 	for (let elem of arr) {
+// 		typeof elem == 'object' ? func(elem) : arrays.push(elem)
+// 	}
+// }
+
+// func([1, [2, 7, 8], [3, 4, [5, [6, 7]]]])
+
+// console.log(arrays)
+
+/* Дан многомерный объект произвольного уровня вложенности, например, такой:
+
+{a: 1, b: {c: 2, d: 3, e: 4}, f: {g: 5, j: 6, k: {l: 7, m: {n: 8, o: 9}}}}
+С помощью рекурсии найдите сумму элементов этого объекта. */
+
+// let sum = 0
+// let arrays = []
+// function func(arr) {
+// 	for (let elem in arr) {
+// 		if (typeof elem == 'object') {
+// 			func(arr)
+// 		} else {
+// 			// console.log(arrays)
+// 			arrays.push(arr[elem])
+// 		}
+// 		for (let i = 0; i < arrays.length; i++) {
+// 			// console.log(arrays[i])
+// 			for (let j in arrays[i]) {
+// 				// console.log(arrays[i][j])
+// 				// arrays.push(arrays[i][j])
+// 				for (let k in arrays[i][j]) {
+// 					// console.log(arrays[i][j][k])
+// 					arrays.push(arrays[i][k])
+
+// 					for (let g in arrays[i][j][k]) {
+// 						arrays.push(arrays[i][j][k][g])
+// 						// console.log(arrays[i][j][k][g])
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// 	console.log(arrays)
+// 	return sum
+// }
+
+// func({
+// 	a: 1,
+// 	b: { c: 2, d: 3, e: 4 },
+// 	f: { g: 5, j: 6, k: { l: 7, m: { n: 8, o: 9 } } },
+// })
+
+/* Дан многомерный массив произвольного уровня вложенности, содержащий внутри себя строки, например, такой:
+
+['a', ['b', 'c', 'd'], ['e', 'f', ['g', ['j', 'k']]]]
+С помощью рекурсии слейте элементы этого массива в одну строку:
+
+'abcdefgjk' */
+
+// let result = ''
+// function func(arr) {
+// 	for (let el of arr) {
+// 		if (typeof el == 'object') {
+// 			func(el)
+// 		} else {
+// 			result += el
+// 			console.log(result)
+// 		}
+// 	}
+// }
+// func(['a', ['b', 'c', 'd'], ['e', 'f', ['g', ['j', 'k']]]])
