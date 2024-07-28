@@ -6410,3 +6410,719 @@ let arr = [1, 2, 3, 4, 5];
 // 	}
 // }
 // func(['a', ['b', 'c', 'd'], ['e', 'f', ['g', ['j', 'k']]]])
+
+// function func(arr) {
+// 	for (let i = 0; i < arr.length; i++) {
+// 		if (typeof arr[i] == 'object') {
+// 			arr[i] = func(arr[i])
+// 		} else {
+// 			console.log(arr[i] + arr[i] ** 2)
+// 		}
+// 	}
+
+// 	return arr
+// }
+
+// console.log(func([1, [2, 7, 8], [3, 4], [5, [6, 7]]]))
+
+/* Дан массив с числами. Используя метод map извлеките из каждого элемента массива квадратный корень и запишите результат в новый массив. */
+
+// let arr = [1, 2, 3, 4, 5]
+// let arr2 = []
+
+// arr.map(elem => {
+// 	let res = elem ** 2
+// 	arr2.push(res)
+// })
+// console.log(arr2)
+
+/* Дан массив со строками. Используя метод map в конец значению каждого элемента массива добавьте символ '!'. */
+
+// let arr = ['a', 'b', 'c']
+
+// arr.map(elem => {
+// 	let res = elem + '!'
+// 	console.log(res);
+// })
+
+/* Дан массив со строками. Используя метод map переверните символы каждой строки в обратном порядке. */
+
+// let arr = ['a', 'b', 'f', 'c']
+
+// let res = arr.reduce((elem, el) => {
+// 	return el + elem
+// })
+
+// console.log(res)
+
+/* Дан следующий массив:
+
+let arr = ['123', '456', '789'];
+Используя метод map преобразуйте этот массив в следующий:
+
+let arr = [
+	[1, 2, 3],
+	[4, 5, 6],
+	[7, 8, 9]
+]; */
+
+// let arr = ['123,', '456,', '789'].join(' ')
+// let splitted = arr.split(/;|,\s+/)
+// let res = splitted.map(arr => arr.split(''))
+// console.log(res)
+
+/* Дан массив с числами. Используя метод map запишите в каждый элемент массива значение этого элемента, умноженное на его порядковый номер в массиве. */
+
+// let num = [1, 2, 3, 4, 5]
+
+// let res = num.map((elem, index) => {
+// 	return elem * index
+// })
+
+// console.log(res)
+
+/* Дан массив с числами. Используя метод forEach найдите сумму квадратов элементов этого массива. */
+
+// let num = [1, 2, 3, 4, 5]
+
+// let res = num.forEach(elem => {
+// 	console.log(elem * elem)
+// })
+
+/* Дан массив с числами. Оставьте в нем только положительные числа. */
+
+// let num = [-1,1, 2, -2, 3, -3, 4, -4, 5, -5]
+
+// let res = num.filter(elem => elem >= 0 ? true : false)
+// console.log(res)
+
+/* Дан массив с числами. Оставьте в нем только отрицательные числа. */
+
+// let num = [-1, 1, 2, -2, 3, -3, 4, -4, 5, -5]
+
+// let res = num.filter(elem => (elem <= 0 ? true : false))
+
+// console.log(res)
+
+/* Дан массив с числами. Оставьте в нем только числа, которые больше нуля, но меньше 10. */
+
+// let num = [1, 2, 10, 9, 7, 8, 20, 30, 12, 15, 40]
+
+// let res = num.filter(elem => (elem >= 0 && elem < 10 ? true : false))
+
+// console.log(res)
+
+// let str = ['lllll', 'sdss', 'hello']
+
+// let res = str.filter(elem => elem.length >= 5 ? true : false)
+// console.log(res);
+
+/* Дан массив с числами. Оставьте в нем только те числа, произведение которых на их порядковый номер меньше 30. */
+
+// let arr = [1, 1, 3, 4, 5, 30, 10]
+
+// let res = arr.filter((elem, index) => {
+// 	if (elem * elem < 30) {
+// 		return true
+// 	} else {
+// 		return false
+// 	}
+// })
+
+// console.log(res)
+
+/* Дан массив, в нем могут быть обычные элементы и подмассивы, например [1, 2, [3, 4], 5, [6, 7]]. Оставьте в нем только обычные элементы. */
+
+// let arr = [1, 2, [3, 4], 5, [6, 7]]
+
+// let res = arr.filter(elem => {
+// 	// console.log(elem);
+// 	if (typeof elem == 'number'){
+// 		return true
+// 	} else{
+// 		false
+// 	}
+// })
+// console.log(res)
+
+/* Дан массив с числами. Проверьте то, что все элементы в массиве больше нуля. */
+
+// let arr = [1, 2, 3, 4, 5, -1, -2]
+
+// let res = arr.every(elem => (elem >= 0 ? true : false))
+
+// console.log(res)
+
+/* Дан массив с числами. Проверьте то, что для всех элементов произведение их значений на их порядковый номер меньше 30. */
+
+// let arr = [1, 2, 3, 4, 5]
+
+// let res = arr.every((elem, index) => (elem * index < 30 ? true : false))
+// console.log(res)
+
+/* Дан массив с числами. Проверьте то, что в массиве есть хотя бы одно число больше нуля. */
+
+// let arr = [-1, -2, 3, -4]
+
+// let res = arr.some(elem => elem > 0)
+
+// console.log(res)
+
+/* Дан массив с числами. Проверьте то, что хотя бы для одного элемента произведение его значения на порядковый номер больше 30. */
+
+// let arr = [1, 2, 3, 4, 5, 6,7]
+
+// let res = arr.some((elem, index) => elem * index > 30)
+
+// console.log(res)
+
+/* Дан массив:
+
+let arr = [1, 2, 3, 4, 5];
+Дана также функция:
+
+function func(num1, num2, num3, num4, num5) {
+	return num1 + num2 + num3 + num4 + num5;
+}
+Найдите с помощью приведенной функции сумму элементов массива. */
+
+// let arr = [1, 2, 3, 4, 5]
+
+// function func(num1, num2, num3, num4, num5) {
+// 	return num1 + num2 + num3 + num4 + num5
+// }
+
+// // func(...arr)
+
+// console.log(func(...arr))
+
+/* Дан массив с числами. Используя Math.min и spread выведите на экран минимальное значение массива. */
+
+// let arr = [1, 2, 3, 4, 5]
+
+// console.log(Math.min(...arr));
+
+/* Напишите функцию, которая будет принимать параметрами произвольное количество чисел и возвращать их среднее арифметическое. */
+
+// function func(...nums) {
+// 	let sum = 0
+// 	for(let el of nums){
+// 		sum += el
+// 	}
+
+// 	return sum
+// }
+
+// console.log(func(1,2,3,4,5));
+
+/* В следующем коде части массива записываются в соответствующие переменные:
+
+let arr = ['John', 'Smit', 'development', 'programmer', 2000];
+
+let name       = arr[0];
+let surname    = arr[1];
+let department = arr[2];
+let position   = arr[3];
+let salary     = arr[4];
+Переделайте этот код через деструктуризацию согласно изученной теории.
+ДЕСТРУКТУРИЗАЦИЯ
+*/
+
+// let arr = ['John', 'Smit', 'development', 'programmer', 2000]
+
+// let [name, surname, department, position, salary] = arr
+
+// console.log(name, surname, department, position, salary);
+
+/* function func() {
+	return ['John', 'Smit', 'development', 'programmer', 2000];
+}
+
+let arr = func();
+
+let name       = arr[0];
+let surname    = arr[1];
+let department = arr[2];
+let position   = arr[3];
+let salary     = arr[4];
+Переделайте этот код через деструктуризацию согласно изученной теории. */
+// function func() {
+// 	return ['John', 'Smit', 'development', 'programmer', 2000]
+// }
+
+// let [name, surname, department, position, salary] = func()
+
+// console.log(name, surname, department, position, salary);
+
+/* В следующем коде части массива записываются в соответствующие переменные:
+
+let arr = ['John', 'Smit', 'development', 'programmer', 2000];
+
+let department = arr[2];
+let position   = arr[3];
+Переделайте этот код через деструктуризацию согласно изученной теории. */
+
+// let arr = ['John', 'Smit', 'development', 'programmer', 2000]
+
+// let [,, department, position, ] = arr
+
+// console.log(department, position);
+
+/* В следующем коде части массива записываются в соответствующие переменные:
+
+let arr = ['John', 'Smit', 'development', 'programmer', 2000];
+
+let name    = arr[0];
+let surname = arr[1];
+
+let info = arr.slice(2); // все элементы со второго до конца массива
+Переделайте этот код через деструктуризацию согласно изученной теории. */
+
+// let arr = ['John', 'Smit', 'development', 'programmer', 2000]
+
+// let [name, surname, , ,] = arr
+
+// console.log(name, surname)
+
+/* В следующем коде части массива записываются в соответствующие переменные:
+
+let arr = ['John', 'Smit', 'development', 'programmer'];
+
+let name       = arr[0];
+let surname    = arr[1];
+let department = arr[2];
+
+let position;
+if (arr[3] !== undefined) {
+	position = arr[3];
+} else {
+	position = 'trainee';
+}
+Переделайте этот код через деструктуризацию согласно изученной теории. */
+
+// let arr = ['John', 'Smit', 'development']
+
+// let [name, surname, department, position] = arr
+
+// if (position !== undefined) {
+// 	position = arr[3]
+// } else {
+// 	position = 'trainee'
+// }
+
+// console.log(name, surname, department, position)
+
+/* Модифицируйте полученный выше код так, чтобы при отсутствии в массиве значения для месяца по умолчанию брался текущий месяц, а при отсутствии значения для года - соответственно текущий год. */
+// let arr = [new Date().getFullYear(), new Date().getMonth()]
+
+// function func() {
+// 	return new Date().getDate()
+// }
+
+// let [year, month, day = func()] = arr
+
+// console.log(year, month, day)
+
+/* В следующем коде части объекта записываются в соответствующие переменные:
+
+let options = {
+	color: 'red',
+	width:  400,
+	height: 500,
+};
+
+let color  = options.color;
+let width  = options.width;
+let height = options.height;
+Переделайте этот код через деструктуризацию согласно изученной теории. */
+
+// let options = {
+// 	color: 'red',
+// 	width: 400,
+// 	height: 500,
+// }
+
+// let { color, width, height } = options
+
+// console.log(color, width, height)
+
+/* В следующем коде части объекта записываются в соответствующие переменные:
+
+let options = {
+	color: 'red',
+	width:  400,
+	height: 500,
+};
+
+let c = options.color;
+let w = options.width;
+let h = options.height;
+Переделайте этот код через деструктуризацию согласно изученной теории. */
+
+// let options = {
+// 	color: 'red',
+// 	width: 400,
+// 	height: 500,
+// }
+
+// let {color: c, width: w, height: h} = options
+
+// console.log(c, w, h);
+
+/* В следующем коде части объекта записываются в соответствующие переменные:
+
+let options = {
+	width:  400,
+	height: 500,
+};
+
+let color;
+if (options.color !== undefined) {
+	color = options.color;
+} else {
+	color = 'black';
+}
+
+let width  = options.width;
+let height = options.height;
+Переделайте этот код через деструктуризацию согласно изученной теории. */
+
+// let options = {
+// 	width: 400,
+// 	height: 500,
+// }
+
+// let {color, width, height} = options
+
+// if (color !== undefined) {
+// 	color = color
+// } else {
+// 	color = 'black'
+// }
+
+// console.log(color, width, height);
+
+/* В следующем коде части объекта записываются в соответствующие переменные:
+
+let options = {
+	width:  400,
+	height: 500,
+};
+
+let с;
+if (options.с !== undefined) {
+	с = options.color;
+} else {
+	с = 'black';
+}
+
+let w = options.width;
+let h = options.height;
+Переделайте этот код через деструктуризацию согласно изученной теории. */
+
+// let options = {
+// 	width: 400,
+// 	height: 500,
+// }
+// let { color: c, width: w, height: h } = options
+
+// if (options.с !== undefined) {
+// 	с = options.color
+// } else {
+// 	c = 'black'
+// }
+
+// console.log(c, w, h)
+
+/* Переделайте следующий код через деструктуризацию согласно изученной теории:
+
+function func(employee) {
+	let name       = employee[0];
+	let surname    = employee[1];
+	let department = employee[2];
+	let position   = employee[3];
+	let salary     = employee[4];
+}
+
+func( ['John', 'Smit', 'development', 'programmer', 2000] ); */
+
+// function func(employee) {
+// 	return [name, surname, department, position, salary] = employee
+// }
+
+// func(['John', 'Smit', 'development', 'programmer', 2000])
+// console.log(name, surname, department, position, salary)
+
+/* Переделайте следующий код через деструктуризацию согласно изученной теории:
+
+function func(employee) {
+	let name     = employee[0];
+	let surname  = employee[1];
+	let info     = employee[2];
+}
+
+func( ['John', 'Smit', 'development', 'programmer', 2000] ); */
+
+// function func(employee) {
+// 	return ([name, surname, info,,] = employee)
+// }
+
+// func(['John', 'Smit', 'development', 'programmer', 2000])
+
+// console.log(name, surname, info)
+
+/* Переделайте следующий код через деструктуризацию согласно изученной теории:
+
+function func(employee) {
+	let name       = employee[0];
+	let surname    = employee[1];
+	let department = employee[2];
+	
+	let position;
+	if (arr[3] !== undefined) {
+		position = arr[3];
+	} else {
+		position = 'джуниор';
+	}
+}
+
+func( ['John', 'Smit', 'development'] ); */
+
+// function func(employee) {
+// 	;[name, surname, department, position] = employee
+// 	if (position !== undefined) {
+// 		position = position
+// 	} else {
+// 		position = 'джуниор'
+// 	}
+// 	console.log(name, surname, department, position)
+// }
+
+// func(['John', 'Smit', 'development'])
+
+/* Переделайте следующий код через деструктуризацию согласно изученной теории:
+
+function func(department, employee, hired) {
+	let name     = employee[0];
+	let surname  = employee[1];
+	
+	let year  = hired[0];
+	let month = hired[1];
+	let day   = hired[2];
+}
+
+func( 'development', ['John', 'Smit'], [2018, 12, 31] ); */
+
+// function func(department, employee, hired) {
+// 	let [name, surname] = employee
+// 	let [year, manth, day] = hired
+// 	console.log(department, name, surname + ': ' + year, manth, day)
+// }
+
+// func('development', ['John', 'Smit'], [2018, 12, 31])
+
+/* Переделайте следующий код через деструктуризацию согласно изученной теории:
+
+function func(options) {
+	let color  = options.color;
+	let width  = options.width;
+	let height = options.height;
+}
+
+func( {color: 'red', width: 400, height: 500} ); */
+
+// function func(options) {
+// 	return {color, width, height} = options
+// }
+
+// func({ color: 'red', width: 400, height: 500 })
+
+// console.log(color, width, height);
+
+/* Переделайте следующий код через деструктуризацию согласно изученной теории:
+
+function func(options) {
+	let width  = options.width;
+	let height = options.height;
+	
+	let color;
+	if (options.color !== undefined) {
+		color = options.color;
+	} else {
+		color = 'black';
+	}
+}
+
+func( {color: 'red', width: 400, height: 500} ); */
+
+// function func(options) {
+// 	let { color, width, height } = options
+// 	if (color !== undefined) {
+// 		color = color
+// 	} else {
+// 		color = 'black'
+// 	}
+// 	console.log(color, width, height)
+// }
+
+// func({ width: 400, height: 500 })
+
+/* Выведите на экран текущий день. */
+
+// let date = new Date()
+// console.log(date.getDate())
+
+/* Выведите на экран текущий месяц. */
+
+// console.log(date.getMonth());
+
+/* Выведите на экран текущий год. */
+
+// console.log(date.getFullYear())
+
+/* Выведите на экран текущую дату-время в формате 12:59:59 31.12.2014. Используйте для всех частей даты (кроме года) созданную нами функцию для добавления нуля при необходимости. */
+
+// let date = new Date()
+
+// function addZero(num){
+// 	if(num >= 0 && num <= 9){
+// 		return '0' + num
+// 	} else{
+// 		return num
+// 	}
+// }
+
+// console.log(
+// 	`${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} ${date.getFullYear()}.${addZero(date.getMonth())}.${addZero(date.getDate())}`
+// );
+
+/* Дана дата в формате год-месяц-день. Преобразуйте эту дату в формат день.месяц.год. */
+
+// let date = '2024-07-19'
+// console.log(date.split('-').reverse().join('/'))
+
+/* Выведите на экран номер текущего дня недели. */
+
+// let date = new Date()
+// console.log(date.getDay());
+
+/* Определите, является ли текущий день недели выходным или рабочим днем. */
+
+// let date = new Date()
+
+// function verif(day) {
+// 	return day != 0 || day != 6 ? console.log('Робочий') : console.log('Вихідний')
+// }
+
+// verif(date.getDay())
+
+/* Определите сколько дней осталось до ближайшего воскресенья. */
+
+// let date = new Date()
+
+// function couter(day) {
+// 	let sum = day
+// 	for (let i = 0; i < day; i++) {
+// 		sum = day - i
+// 	}
+// 	console.log(sum);
+// }
+// couter(date.getDay())
+
+/* Пусть дан следующий массив:
+
+let months = [
+	'янв', 'фев', 'мар', 'апр', 'май', 'июн',
+	'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'
+];
+Выведите с помощью этого массива название текущего месяца. */
+
+// let date = new Date()
+// let months = [
+// 	'янв',
+// 	'фев',
+// 	'мар',
+// 	'апр',
+// 	'май',
+// 	'июн',
+// 	'июл',
+// 	'авг',
+// 	'сен',
+// 	'окт',
+// 	'ноя',
+// 	'дек',
+// ]
+
+// console.log(months[date.getMonth()])
+
+/* Узнайте, какой день недели был в ваш день рождения. */
+
+// let date = new Date(2003, 10, 5)
+// let day = date.getDay()
+// let days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб']
+// console.log(days[day]);
+
+/* Выведите на экран timestamp, соответствующий дате 1 января 2025 года. */
+// let year = document.querySelector('.year')
+// let mounth = document.querySelector('.mounth')
+// let day = document.querySelector('.day')
+// let text = document.querySelector('.text')
+// let btn = document.querySelector('.btn')
+
+// function times() {
+// 	btn.addEventListener('click', () => {
+// 		let date = new Date()
+// 		let now = new Date(+year.value, +mounth.value - 1, +day.value)
+
+// 		let diff = date.getTime() - now.getTime()
+
+// 		let seconds = Math.floor((diff / 1000) % 60)
+// 		let minutes = Math.floor((diff / (1000 % 60)) % 60)
+// 		let hors = Math.floor((diff / (1000 * 60 * 60)) % 24)
+// 		let days = Math.floor((diff / (1000 * 60 * 60 * 24)) % 30)
+// 		let mounths = Math.floor((diff / (1000 * 60 * 60 * 24 * 30)) % 12)
+// 		let years = Math.floor(diff / (1000 * 60 * 60 * 24 * 30 * 12))
+
+// 		text.innerHTML = `пройшло ${years} лет ${mounths} месяцев ${days} дня ${hors} часа ${minutes} минут ${seconds} секунд`
+// 	})
+// }
+// times()
+
+/* Выведите на экран количество дней, прошедшее между 1 марта 1988 года и 10 января 2000 года. */
+
+// let date = new Date(2000, 1, 10)
+// let now = new Date(1988, 3, 1)
+
+// let date1 = date - now
+// let days = date1 / (1000 * 60 * 60 * 24)
+// console.log(days)
+
+/* Выведите на экран количество месяцев, прошедшее между вашим рождением и текущим моментом времени. */
+
+// let date = new Date()
+// let myDate = new Date(2003, 9, 5)
+
+// let mounth = date.getTime() - myDate.getTime()
+
+// let mounthDiferenc = Math.floor(mounth / (1000 * 60 * 60 * 24 * 30) - 1)
+
+// console.log(mounthDiferenc)
+
+/* Выведите на экран количество миллисекунд, прошедшее между 1 сентября 2000 года и 15 февраля 2010 года. */
+
+// let date = new Date(2010, 1, 15)
+// let date1 = new Date(2000, 8, 1)
+
+// let count = date - date1
+
+// console.log(count);
+
+/* Модифицируйте предыдущую задачу так, чтобы на экран выводилась разница в днях. */
+
+//  date = new Date(2010, 1, 15)
+// let date1 = new Date(2000, 8, 1)
+
+// let count = date - date1
+
+// console.log(count);
+

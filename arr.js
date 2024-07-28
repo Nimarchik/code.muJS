@@ -2617,13 +2617,33 @@ for (let i = 0; i < 3; i++) {
 
 console.log(arr);
 Написанный код, однако, не делает задуманного. Найдите и исправьте ошибку автора. */
-let arr = []
-let k = 1
-for (let i = 0; i < 3; i++) {
-	arr[i] = []
+// let arr = []
+// let k = 1
+// for (let i = 0; i < 3; i++) {
+// 	arr[i] = []
 
-	for (let j = 0; j < 3; j++) {
-		arr[i].push(k++)
+// 	for (let j = 0; j < 3; j++) {
+// 		arr[i].push(k++)
+// 	}
+// }
+// console.log(arr)
+
+/* Дан многомерный массив произвольного уровня вложенности, например, такой:
+
+[1, [2, 7, 8], [3, 4], [5, [6, 7]]]
+Возведите все элементы-числа этого массива в квадрат. */
+
+function func(arr) {
+	for (let i = 0; i < arr.length; i++) {
+		if (typeof arr[i] == 'object') {
+			arr[i] = func(arr[i])
+		} else {
+			arr[i] += '!'
+		}
 	}
+
+	return arr
 }
-console.log(arr)
+
+let funcc = func([1, [2, 7, 8], [3, 4], [5, [6, 7]]])
+console.log(funcc)
