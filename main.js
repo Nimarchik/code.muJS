@@ -7126,3 +7126,102 @@ let months = [
 
 // console.log(count);
 
+/* Модифицируйте предыдущую задачу так, чтобы на экран выводилась разница в днях. */
+
+// let date = new Date(2000, 8, 1)
+// let date1 = new Date(2010, 1, 15)
+
+// let count = date1 - date
+
+// let days = Math.floor((count / (1000 * 60 * 60 * 24)) * 30)
+
+// console.log(days)
+
+/* Модифицируйте предыдущую задачу так, чтобы на экран выводилась разница в месяцах. */
+
+// let date = new Date(2000, 8, 1)
+// let date1 = new Date(2010, 1, 15)
+
+// let count = date1 - date
+
+// let mounth = Math.floor(count / (1000 * 60 * 60 * 24 * 30) % 12)
+
+// console.log(years)
+
+/* Модифицируйте предыдущую задачу так, чтобы на экран выводилась разница в годах. */
+
+// let date = new Date(2000, 8, 1)
+// let date1 = new Date(2010, 1, 15)
+
+// let count = date1 - date
+
+// let years = Math.floor(count / (1000 * 60 * 60 * 24 * 30 * 12))
+
+// console.log(years)
+
+/*  ticked Timer */
+
+// const oneSecond = () => 1000
+// const getCurentTime = () => new Date()
+// const clear = () => console.clear()
+// const log = message => console.log(message)
+
+// const serializeClockTime = date => ({
+// 	hours: date.getHours(),
+// 	minutes: date.getMinutes(),
+// 	seconds: date.getSeconds(),
+// })
+
+// const civilianHours = clockTime => ({
+// 	...clockTime,
+// 	hours: clockTime.hours > 12 ? clockTime.hours - 12 : clockTime.hours,
+// })
+
+// const appendAMPM = clockTime => ({
+// 	...clockTime,
+// 	ampm: clockTime.hours >= 12 ? 'PM' : 'AM',
+// })
+
+// const display = target => time => target(time)
+
+// const formatClock = format => time =>
+// 	format
+// 		.replace('hh', time.hours)
+// 		.replace('mm', time.minutes)
+// 		.replace('ss', time.seconds)
+// 		.replace('tt', time.ampm)
+
+// const prependZero = key => clockTime => ({
+// 	...clockTime,
+// 	[key]: clockTime[key] < 10 ? '0' + clockTime[key] : clockTime[key],
+// })
+
+// const compose = (...fns) => (arg) => 
+// 	fns.reduce((composed, f) => f(composed), arg)
+
+// const convertToCivilianTime = clockTime =>
+// 	compose(appendAMPM, civilianHours)(clockTime)
+
+// const doubleDigits = civilianTime =>
+// 	compose(
+// 		prependZero('hours'),
+// 		prependZero('minutes'),
+// 		prependZero('seconds')
+// 	)(civilianTime)
+
+// const startTicking = () =>
+// 	setInterval(
+// 		compose(
+// 			clear,
+// 			getCurentTime,
+// 			serializeClockTime,
+// 			convertToCivilianTime,
+// 			doubleDigits,
+// 			formatClock('hh:mm:ss tt'),
+// 			display(log)
+// 		),
+// 		oneSecond()
+// 	)
+
+// startTicking()
+
