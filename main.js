@@ -7196,7 +7196,7 @@ let months = [
 // 	[key]: clockTime[key] < 10 ? '0' + clockTime[key] : clockTime[key],
 // })
 
-// const compose = (...fns) => (arg) => 
+// const compose = (...fns) => (arg) =>
 // 	fns.reduce((composed, f) => f(composed), arg)
 
 // const convertToCivilianTime = clockTime =>
@@ -7221,7 +7221,268 @@ let months = [
 // 			display(log)
 // 		),
 // 		oneSecond()
-// 	)
+// 	)¡
 
 // startTicking()
 
+/* ИММУНОТАБЕЛЬНОЕ ДОБАВЛЕНИЕ В МАССИВЫ-ОБЪКТЫ  */
+//task 1
+//Сделайте кнопку, по нажатию на которую будет происходить иммутабельное добавление нового элемента в массив.
+// let btn = document.querySelector('button'),
+// 	p = document.querySelector('p')
+// let arr = [1, 2, 3, 4, 5]
+// let res = [...arr, 6]
+
+// p.innerHTML += arr 
+// btn.addEventListener('click', () => (p.innerHTML = res))
+
+/* Сделайте кнопку, по нажатию на которую будет происходить удаление элемента из массива. Пусть номер элемента для удаления хранится в переменной. */
+// task 2
+
+// let btn = document.querySelector('button'),
+// 	p = document.querySelector('p')
+// let arr = [1, 2, 3, 4, 5]
+
+// let int = 2
+
+// let res = [...arr.slice(0, int), ...arr.slice(int + 1)]
+
+// p.innerHTML = arr
+
+// btn.addEventListener('click', () => (p.innerHTML = res))
+
+/* Сделайте кнопку, по нажатию на которую будет происходить изменение элемента массива. Пусть номер элемента для изменения хранится в переменной. */
+// task 3
+
+// let btn = document.querySelector('button'),
+// 	p = document.querySelector('p')
+// let arr = [1, 2, 3, 4, 5]
+
+// let int = 2
+
+// let res = [...arr.slice(0, int), '20', ...arr.slice(int + 1)]
+
+// p.innerHTML = arr
+
+// btn.addEventListener('click', () => (p.innerHTML = res))
+
+/* Дан массив объектов. Сделайте кнопку, по нажатию на которую в него будет добавляться новый элемент. Пусть id генерируется функцией. */
+// task 4
+
+// function getId(length = 21) {
+// 	let chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+// 	let res = ''
+
+// 	for (let i = 0; i < length; i++) {
+// 		res += chars[Math.floor(Math.random() * chars.length)]
+// 	}
+
+// 	return res
+// }
+
+// let arr = [
+// 	{
+// 		id: 'GYi9GauC4gBF1e2SixDvu',
+// 		prop1: 'value11',
+// 		prop2: 'value12',
+// 		prop3: 'value13',
+// 	},
+// 	{
+// 		id: 'IWSpfBPSV3SXgRF87uO74',
+// 		prop1: 'value21',
+// 		prop2: 'value22',
+// 		prop3: 'value23',
+// 	},
+// 	{
+// 		id: 'JAmjRlfQT8rLTm5tG2m1L',
+// 		prop1: 'value31',
+// 		prop2: 'value32',
+// 		prop3: 'value33',
+// 	},
+// ]
+
+// let newElement = {
+// 	id: getId(),
+// 	prop1: 'value34',
+// 	prop2: 'value35',
+// 	prop3: 'value36'
+// }
+
+// let newObj = [...arr, newElement]
+
+// let btn = document.querySelector('button')
+
+// btn.addEventListener('click', () => console.log(newObj))
+
+// console.log(arr);
+
+/* Пусть в переменной хранится id элемента. Сделайте кнопку, которая будет удалять элемент с заданным id. */
+//task 5
+
+// let arr = [
+// 	{
+// 		id: 'GYi9GauC4gBF1e2SixDvu',
+// 		prop1: 'value11',
+// 		prop2: 'value12',
+// 		prop3: 'value13',
+// 	},
+// 	{
+// 		id: 'IWSpfBPSV3SXgRF87uO74',
+// 		prop1: 'value21',
+// 		prop2: 'value22',
+// 		prop3: 'value23',
+// 	},
+// 	{
+// 		id: 'JAmjRlfQT8rLTm5tG2m1L',
+// 		prop1: 'value31',
+// 		prop2: 'value32',
+// 		prop3: 'value33',
+// 	},
+// ]
+
+// let id = 'JAmjRlfQT8rLTm5tG2m1L'
+
+// let newObj = arr.filter(elem => elem.id != id)
+
+// let btn = document.querySelector('button')
+
+// btn.addEventListener('click', () => console.log(newObj))
+
+// console.log(arr);
+
+/* Пусть в переменной хранится id элемента массива. Сделайте кнопку, по нажатию на которую будет изменен соответствующий элемент массива. */
+// task 6
+
+// let arr = [
+// 	{
+// 		id: 'GYi9GauC4gBF1e2SixDvu',
+// 		prop1: 'value11',
+// 		prop2: 'value12',
+// 		prop3: 'value13',
+// 	},
+// 	{
+// 		id: 'IWSpfBPSV3SXgRF87uO74',
+// 		prop1: 'value21',
+// 		prop2: 'value22',
+// 		prop3: 'value23',
+// 	},
+// 	{
+// 		id: 'JAmjRlfQT8rLTm5tG2m1L',
+// 		prop1: 'value31',
+// 		prop2: 'value32',
+// 		prop3: 'value33',
+// 	},
+// ]
+
+// let data = {
+// 	id: 'IWSpfBPSV3SXgRF87uO74',
+// 	prop1: 'value21 !',
+// 	prop2: 'value22 !',
+// 	prop3: 'value23 !',
+// }
+
+let res = arr.map(elem => (elem.id === data.id ? data : elem))
+
+// let btn = document.querySelector('button')
+
+// btn.addEventListener('click', () => console.log(res))
+
+// console.log(arr);
+
+/* Даны следующие переменные:
+
+let id = 'JAmjRlfQT8rLTm5tG2m1L';
+let prop = 'prop2';
+Сделайте кнопку, по нажатию на которую будет браться элемент массива с указанным id, в нем будет браться свойство с указанным именем и в конец значения этого свойства будет дописываться знак '!'. */
+// task 7
+
+// let arr = [
+// 	{
+// 		id: 'GYi9GauC4gBF1e2SixDvu',
+// 		prop1: 'value11',
+// 		prop2: 'value12',
+// 		prop3: 'value13',
+// 	},
+// 	{
+// 		id: 'IWSpfBPSV3SXgRF87uO74',
+// 		prop1: 'value21',
+// 		prop2: 'value22',
+// 		prop3: 'value23',
+// 	},
+// 	{
+// 		id: 'JAmjRlfQT8rLTm5tG2m1L',
+// 		prop1: 'value31',
+// 		prop2: 'value32',
+// 		prop3: 'value33',
+// 	},
+// ]
+
+// let id = 'JAmjRlfQT8rLTm5tG2m1L'
+// let prop = 'prop2'
+
+// let res = arr.map(elem => {
+// 	if (elem.id === id) {
+// 		return { ...elem, [prop]: prop + '!' }
+// 	} else {
+// 		return elem
+// 	}
+// })
+// let btn = document.querySelector('button')
+
+// btn.addEventListener('click', () => console.log(res))
+
+// console.log(arr)
+
+/* Пусть даны две переменные с именами свойств:
+
+let id = 'JAmjRlfQT8rLTm5tG2m1L';
+let prop1 = 'prop2';
+let prop2 = 'prop3';
+Модифицируйте предыдущую задачу так, чтобы по клику изменения выполнялись сразу для двух указанных свойств. */
+
+//task 8
+
+// let arr = [
+// 	{
+// 		id: 'GYi9GauC4gBF1e2SixDvu',
+// 		prop1: 'value11',
+// 		prop2: 'value12',
+// 		prop3: 'value13',
+// 	},
+// 	{
+// 		id: 'IWSpfBPSV3SXgRF87uO74',
+// 		prop1: 'value21',
+// 		prop2: 'value22',
+// 		prop3: 'value23',
+// 	},
+// 	{
+// 		id: 'JAmjRlfQT8rLTm5tG2m1L',
+// 		prop1: 'value31',
+// 		prop2: 'value32',
+// 		prop3: 'value33',
+// 	},
+// ]
+
+// let id = 'JAmjRlfQT8rLTm5tG2m1L'
+// let prop1 = 'prop2'
+// let prop2 = 'prop3'
+
+// let res = arr.map(elem => {
+// 	if (elem.id === id) {
+// 		return {
+// 			...elem,
+// 			[prop1]: (prop1 = 'value32!'),
+// 			[prop2]: (prop2 = 'value33!'),
+// 		}
+// 	} else {
+// 		return elem
+// 	}
+// })
+// let btn = document.querySelector('button')
+
+// btn.addEventListener('click', () => console.log(res))
+
+// console.log(arr)
+
+/*  */
